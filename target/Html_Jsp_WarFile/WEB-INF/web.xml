@@ -1,0 +1,29 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+
+	<!-- mapping url address passed from jsp ppage to the java class for further 
+		execution! -->
+	<servlet>
+		<servlet-name>connnect_1</servlet-name>
+		<servlet-class>com.helloworld.page.Pass_Information</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>connnect_1</servlet-name>
+		<url-pattern>/caller</url-pattern>
+	</servlet-mapping>
+
+	<!--when changes are made to this file or any file, first stop the server 
+		then save the file, and then restart the server. Then open not in eclipse, 
+		but open an independent browser and type the url. -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+
+</web-app>
